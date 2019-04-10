@@ -1,4 +1,6 @@
-# Your custom Twilio Flex Plugin
+# Twilio Flex Plugin - Call Recording Controls
+
+See [this article](https://support.twilio.com/hc/en-us/articles/360021414533-How-to-control-recordings-real-time-with-Twilio-Flex) for more setup information.
 
 Twilio Flex Plugins allow you to customize the apperance and behavior of [Twilio Flex](https://www.twilio.com/flex). If you want to learn more about the capabilities and how to use the API, check out our [Flex documentation](https://www.twilio.com/docs/flex).
 
