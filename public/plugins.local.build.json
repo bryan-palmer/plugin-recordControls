@@ -1,8 +1,8 @@
 [
   {
-    "name": "RecordControlsPlugin",
+    "name": "FlexathonPlugin",
     "version": "0.0.0",
-    "class": "RecordControlsPlugin",
+    "class": "FlexathonPlugin",
     "requires": [
       {
         "@twilio/flex-ui": "^1"

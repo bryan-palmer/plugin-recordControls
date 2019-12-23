@@ -1,13 +1,18 @@
 [
   {
-    "name": "RecordControlsPlugin",
+    "name": "plugin-recordControls",
     "version": "0.0.0",
-    "class": "RecordControlsPlugin",
+    "class": "plugin-recordControls",
     "requires": [
       {
         "@twilio/flex-ui": "^1"
       }
     ],
-    "src": "http://localhost:8080/plugin-recordControls.js"
+    "src": "http://localhost:3000/plugin-recordControls.js"
+  },
+  {
+    "name": "Admin Plugin",
+    "version": "1.0.1",
+    "src": "https://media.twiliocdn.com/flex/flex-admin-plugin-1.0.1.js"
   }
 ]

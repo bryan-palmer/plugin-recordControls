@@ -17,11 +17,12 @@ export default class RecordControlsPlugin extends FlexPlugin {
    * @param manager { import('@twilio/flex-ui').Manager }
    */
   init(flex, manager) {
-    // Add component to top of TaskInfoPanel only for voice calls
-    flex.TaskInfoPanel.Content.add(
-      <RecordControlsComponent key="demo-record-controls-component" />,
+    /**
+     * Adds a new TaskCanvas Tab for voice calls
+     */
+    flex.TaskCanvasTabs.Content.add(
+      <RecordControlsComponent label="Recording" key="recordingControls" />,
       {
-        sortOrder: -1,
         if: props => props.task.source.taskChannelUniqueName === "voice"
       }
     );
