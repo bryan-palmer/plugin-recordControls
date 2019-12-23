@@ -83,8 +83,6 @@ export class RecordControlsComponent extends React.Component {
 
     return (
       <div id="recordControls" key="recordControls">
-        <h1>RECORDING CONTROLS PLUGIN</h1>
-
         <div id="recordControlsStatus">
           Status: {this.state.recordingStatus}
           {this.state.recordingSid ? `(${this.state.recordingSid})` : ""}

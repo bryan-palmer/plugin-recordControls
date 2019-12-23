@@ -21,7 +21,9 @@ exports.handler = function(context, event, callback) {
     case "create":
       client
         .calls(callSid)
-        .recordings.create()
+        .recordings.create({
+          trim: 'trim-silence'
+        })
         .then(recording => {
           responseBody.recordingSid = recording.sid;
           responseBody.status = recording.status;
@@ -46,7 +48,7 @@ exports.handler = function(context, event, callback) {
       client
         .calls(callSid)
         .recordings(recordingSid)
-        .update({ status: setStatus })
+        .update({ status: setStatus, pauseBehavior: 'skip' })
         .then(recording => {
           responseBody.recordingSid = recording.sid;
           responseBody.status = recording.status;
